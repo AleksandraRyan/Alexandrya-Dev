@@ -249,6 +249,7 @@ img {
   object-fit: cover;
   border: none;
   padding: 20px;
+  border-radius: 50%;
 }
 
 .flex-columns .column-2 {
