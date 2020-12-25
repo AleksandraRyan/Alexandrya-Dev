@@ -198,7 +198,7 @@ img {
 
 .team img {
   border-radius: 50%;
-  width: 500px;
+  width: 98%;
   margin-right: 20px;
   border: rgb(13, 161, 206) 2px solid;
 }
@@ -297,6 +297,10 @@ img {
   font-size: 17px;
 }
 
+.contact .btn:hover {
+  background: rgb(13, 157, 201);
+}
+
 .contact-form {
   width: 100%;
   padding: 20px 0;
@@ -345,4 +349,103 @@ textarea:focus {
 
 .social i:hover {
   color: rgb(175, 7, 175);
+}
+
+/* Media Queries */
+/* Home Page */
+@media (max-width: 567px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 11vh;
+  }
+
+  nav h1 {
+    margin-top: 16px;
+  }
+
+  nav ul {
+    margin-bottom: 10px;
+  }
+
+  .content h1 {
+    display: none;
+  }
+  .content p {
+    display: none;
+  }
+  .content a {
+    display: none;
+  }
+
+  .flex-grid .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  /* About Me  */
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us p {
+    text-align: justify;
+    line-height: 1.4;
+  }
+
+  .flex-items .icons {
+    margin: 30px;
+  }
+
+  .flex-2 {
+    flex: 100%;
+    max-width: 100%;
+    margin: 50px;
+  }
+
+  .flex-2 img {
+    border-radius: 100%;
+    border: 2px solid rgb(13, 161, 206);
+  }
+
+  .about-us .flex-2 {
+    width: 100%;
+  }
+
+  /* Team */
+  .team .flex-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team .flex-items img {
+    margin-top: 30px;
+  }
+
+  .team .flex-items p {
+    border-bottom: 2px solid #000;
+    padding: 10px 0;
+  }
+
+  .team .section-header {
+    padding: 10px;
+  }
+
+  /* Contact */
+  .contact .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact .column h2 {
+    padding: 20px 0;
+  }
 }
